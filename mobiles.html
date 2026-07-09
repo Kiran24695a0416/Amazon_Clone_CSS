@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone - Mobiles</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding-bottom: 60px;
+            background-color: rgba(95, 47, 255, 0.134);
+        }
+        header{
+            background:#131921;
+            padding:18px;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            box-shadow:0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        header a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            padding:10px 18px;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        header a:hover{
+            background:#ff9900;
+            color:black;
+            transform:scale(1.08);
+        }
+        .container {
+            max-width: 900px;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid;
+            padding: 25px;
+            text-align: left;
+        }
+        table td a {
+            display: block;
+            overflow: hidden;
+        }
+
+        .mobile-img {
+            width: 180px;
+            height: 250px;
+            padding: 20px;
+            background-color:rgba(244, 24, 39, 0.137);
+            display: block;
+            transition: transform 0.3s ease; /* Makes the zoom effect smooth */
+        }
+        .mobile-img:hover {
+            transform: scale(1.1); 
+        }
+
+        footer{
+            width:100%;
+            position:fixed;
+            bottom:0;
+            left:0;
+            background:#131921;
+            display:flex;
+            justify-content:space-around;
+            padding:15px 0;
+            box-shadow:0 -2px 10px rgba(0,0,0,0.3);
+        }
+
+        footer a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            padding:8px 15px;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        footer a:hover{
+            background:#ff9900;
+            color:black;
+            transform:scale(1.08);
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="mobiles.html">Mobiles</a>
+        <a href="electronics.html">Electronics</a>
+        <a href="Products.html">Products</a>
+        <a href="Fashion.html">Fashion</a>
+        <a href="Books.html">Books</a>
+    </header>
+
+    <div class="container">
+        <h2>Available Mobile Devices</h2>
+        <table>
+            <tr>
+                <td style="width: 33%">
+                    <a href="https://en.wikipedia.org/wiki/IPhone" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img class="mobile-img" src="https://th.bing.com/th/id/OIP.i5kU2eHiv5jBpRQTjuKKsQHaL5?w=186&h=298&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Smartphone Pro">
+                        <h3>ZonPhone 14 Pro</h3>
+                        <p><strong>Price:</strong> $999.00</p>
+                        <p style="font-size: 13px; color: #555; line-height: 1.4;">Features: 128GB Storage, Cinematic Video Mode, All-day Battery life, 5G Network Ready.</p>
+                    </a>
+                </td>
+                <td style="width: 33%">
+                    <a href="https://en.wikipedia.org/wiki/Android_(operating_system)" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img class="mobile-img" src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=300&auto=format&fit=crop" alt="Android Max">
+                        <h3>Nexus Wave X</h3>
+                        <p><strong>Price:</strong> $649.00</p>
+                        <p style="font-size: 13px; color: #555; line-height: 1.4;">Features: 6.7-inch AMOLED Display, 64MP Triple Camera Setup, Fast Charging 2.0.</p>
+                    </a>
+                </td>
+                <td style="width: 33%">
+                    <a href="https://en.wikipedia.org/wiki/Smartphone" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img class="mobile-img" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300&auto=format&fit=crop" alt="Volt Lite">
+                        <h3>Volt Horizon Lite</h3>
+                        <p><strong>Price:</strong> $349.00</p>
+                        <p style="font-size: 13px; color: #555; line-height: 1.4;">Features: 64GB Storage, Dual Camera Setup, Eco-Friendly Material, Long Standby.</p>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width: 33%">
+                    <a href="https://en.wikipedia.org/wiki/Redmi" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img class="mobile-img" src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=300&auto=format&fit=crop" alt="Redmi">
+                        <h3>Redmi Note 14</h3>
+                        <p><strong>Price:</strong> $299.00</p>
+                        <p style="font-size:13px; color:#555; line-height:1.4;">
+                            Features: 108MP Camera, 5000mAh Battery, 128GB Storage, Fast Charging.
+                        </p>
+                    </a>
+                </td>
+
+                <td style="width: 33%">
+                    <a href="https://en.wikipedia.org/wiki/Vivo" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img class="mobile-img" src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=300&auto=format&fit=crop" alt="Vivo">
+                        <h3>Vivo V50</h3>
+                        <p><strong>Price:</strong> $399.00</p>
+                        <p style="font-size:13px; color:#555; line-height:1.4;">
+                            Features: AMOLED Display, 50MP Selfie Camera, 5G Support, 256GB Storage.
+                        </p>
+                    </a>
+                </td>
+
+                <td style="width: 33%">
+                    <a href="https://en.wikipedia.org/wiki/Realme" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img class="mobile-img" src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=300&auto=format&fit=crop" alt="Realme">
+                        <h3>Realme GT 7</h3>
+                        <p><strong>Price:</strong> $499.00</p>
+                        <p style="font-size:13px; color:#555; line-height:1.4;">
+                            Features: 144Hz Display, 256GB Storage, 50MP AI Camera, 120W Fast Charging.
+                        </p>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:33%">
+                    <a href="https://en.wikipedia.org/wiki/Xiaomi_15" target="_blank" style="text-decoration:none; color:inherit;">
+                        <img class="mobile-img" src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=300&auto=format&fit=crop" alt="Xiaomi 15">
+                        <h3>Xiaomi 15 Pro</h3>
+                        <p><strong>Price:</strong> $799.00</p>
+                        <p style="font-size:13px; color:#555; line-height:1.4;">
+                            Features: Snapdragon 8 Elite, 12GB RAM, 512GB Storage, 120W Fast Charging.
+                        </p>
+                    </a>
+                </td>
+
+                <td style="width:33%">
+                    <a href="https://en.wikipedia.org/wiki/Oppo" target="_blank" style="text-decoration:none; color:inherit;">
+                        <img class="mobile-img" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300&auto=format&fit=crop" alt="Oppo">
+                        <h3>Oppo Reno 14 Pro</h3>
+                        <p><strong>Price:</strong> $699.00</p>
+                        <p style="font-size:13px; color:#555; line-height:1.4;">
+                            Features: 50MP AI Camera, AMOLED Display, 256GB Storage, 5G Connectivity.
+                        </p>
+                    </a>
+                </td>
+
+                <td style="width:33%">
+                    <a href="https://en.wikipedia.org/wiki/Nothing_(company)" target="_blank" style="text-decoration:none; color:inherit;">
+                        <img class="mobile-img" src="https://images.unsplash.com/photo-1567581935884-3349723552ca?w=300&auto=format&fit=crop" alt="Nothing Phone">
+                        <h3>Nothing Phone (3)</h3>
+                        <p><strong>Price:</strong> $649.00</p>
+                        <p style="font-size:13px; color:#555; line-height:1.4;">
+                            Features: Glyph Interface, 256GB Storage, OLED Display, Fast Charging.
+                        </p>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:33%">
+                    <a href="https://en.wikipedia.org/wiki/Motorola" target="_blank" style="text-decoration:none; color:inherit;">
+                        <img class="mobile-img" src="https://images.unsplash.com/photo-1580910051074-3eb694886505?w=300&auto=format&fit=crop" alt="Motorola">
+                        <h3>Motorola Edge 60</h3>
+                        <p><strong>Price:</strong> $549.00</p>
+                        <p style="font-size:13px; color:#555; line-height:1.4;">
+                            Features: Curved Display, 50MP Camera, 5000mAh Battery, Dolby Atmos.
+                        </p>
+                    </a>
+                </td>
+
+                <td style="width:33%">
+                    <a href="https://en.wikipedia.org/wiki/Honor_(brand)" target="_blank" style="text-decoration:none; color:inherit;">
+                        <img class="mobile-img" src="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=300&auto=format&fit=crop" alt="Honor">
+                        <h3>Honor Magic 7</h3>
+                        <p><strong>Price:</strong> $829.00</p>
+                        <p style="font-size:13px; color:#555; line-height:1.4;">
+                            Features: AI Camera, 120Hz OLED Display, 512GB Storage, 66W Charging.
+                        </p>
+                    </a>
+                </td>
+
+                <td style="width:33%">
+                    <a href="https://en.wikipedia.org/wiki/Sony_Xperia" target="_blank" style="text-decoration:none; color:inherit;">
+                        <img class="mobile-img" src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?w=300&auto=format&fit=crop" alt="Sony Xperia">
+                        <h3>Sony Xperia 1 VI</h3>
+                        <p><strong>Price:</strong> $1,099.00</p>
+                        <p style="font-size:13px; color:#555; line-height:1.4;">
+                            Features: 4K OLED Display, Zeiss Camera, Snapdragon Processor, 256GB Storage.
+                        </p>
+                    </a>
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+
+    <footer>
+        <a href="home.html">Home</a>
+        <a href="Categories.html">Categories</a>
+        <a href="index.html">Account</a>
+        <a href="Cart.html">Cart</a>
+    </footer>
+
+</body>
+</html>

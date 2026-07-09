@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone - Home</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding-bottom: 80px;
+            background-color: rgba(95, 47, 255, 0.134);
+        }
+        header{
+            background:#131921;
+            padding:18px;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            box-shadow:0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        header a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            padding:10px 18px;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        header a:hover{
+            background:#ff9900;
+            color:black;
+            transform:scale(1.08);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        
+        .hero-banner {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.1)), 
+                        url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .hero-text h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #131921;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 20px;
+            margin-bottom: 30px;
+        }
+
+        td {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 25px;
+            border-radius: 4px;
+            text-align: left;
+            vertical-align: top;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        
+        table td a {
+            display: block;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .img-container {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f7f7f7;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .home-card-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+       
+        table td a:hover .home-card-img {
+            transform: scale(1.10);
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #111;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .card-desc {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.4;
+            margin-bottom: 12px;
+        }
+
+        .explore-link {
+            color: #007185;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        table td a:hover .explore-link {
+            text-decoration: underline;
+            color: #C7511F;
+        }
+
+        footer{
+            width:100%;
+            position:fixed;
+            bottom:0;
+            left:0;
+            background:#131921;
+            display:flex;
+            justify-content:space-around;
+            padding:15px 0;
+            box-shadow:0 -2px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        footer a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            padding:8px 15px;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        footer a:hover{
+            background:#ff9900;
+            color:black;
+            transform:scale(1.08);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="mobiles.html">Mobiles</a>
+        <a href="electronics.html">Electronics</a>
+        <a href="Products.html">Products</a>
+        <a href="Fashion.html">Fashion</a>
+        <a href="Books.html">Books</a>
+    </header>
+
+    <div class="container">
+        <div class="hero-banner">
+            <div class="hero-text">
+                <h1>Mega Shopping Festival</h1>
+                <p>Enjoy up to 40% off on top tech, modern streetwear styles, and best-selling books.</p>
+            </div>
+        </div>
+
+        <h2>Explore Featured Deals</h2>
+        
+        <table>
+            <tr>
+                <td style="width: 33.33%">
+                    <a href="electronics.html">
+                        <div class="img-container">
+                            <img class="home-card-img" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=300&q=80" alt="Large Appliances Deals">
+                        </div>
+                        <h3>Home Appliances</h3>
+                        <p class="card-desc">Upgrade your lifestyle with top refrigerators, advanced front-load washers, and air conditioners.</p>
+                        <span class="explore-link">Shop Large Appliances </span>
+                    </a>
+                </td>
+                <td style="width: 33.33%">
+                    <a href="mobiles.html">
+                        <div class="img-container">
+                            <img class="home-card-img" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=300&q=80" alt="Smartphone Deals">
+                        </div>
+                        <h3>Latest Smartphones</h3>
+                        <p class="card-desc">Discover Next-Gen mobile devices featuring stunning camera matrices and fast processing chips.</p>
+                        <span class="explore-link">View Mobile Deals </span>
+                    </a>
+                </td>
+                <td style="width: 33.33%">
+                    <a href="categories.html">
+                        <div class="img-container">
+                            <img class="home-card-img" src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=300&q=80" alt="All Categories">
+                        </div>
+                        <h3>Shop All Departments</h3>
+                        <p class="card-desc">Browse our beautifully structured database categories including personal grooming, footwear, and more.</p>
+                        <span class="explore-link">See All Categories </span>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="categories.html">
+                        <div class="img-container">
+                            <img class="home-card-img" src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=300&q=80" alt="Streetwear Fashion">
+                        </div>
+                        <h3>Trending Streetwear</h3>
+                        <p class="card-desc">Stay ahead with modern aesthetic drop-shoulder oversized hoodies, utility cargo pants, and Y2K shades.</p>
+                        <span class="explore-link">Explore Fashion </span>
+                    </a>
+                </td>
+                <td>
+                    <a href="categories.html">
+                        <div class="img-container">
+                            <img class="home-card-img" src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=300&q=80" alt="Books Category">
+                        </div>
+                        <h3>Best Seller Books</h3>
+                        <p class="card-desc">Dive into classic sci-fi world-building, high-productivity toolsets, and investment logic manuals.</p>
+                        <span class="explore-link">Browse Bookshelf </span>
+                    </a>
+                </td>
+                <td>
+                    <a href="cart.html">
+                        <div class="img-container">
+                            <img class="home-card-img" src="https://images.unsplash.com/photo-1573855619003-97b4799dcd8b?auto=format&fit=crop&w=300&q=80" alt="Review Shopping Cart">
+                        </div>
+                        <h3>Your Shopping Cart</h3>
+                        <p class="card-desc">Review your selected items, modify item quantities, and execute your secure payment checkouts quickly.</p>
+                        <span class="explore-link">Go to Cart </span>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <a href="home.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="index.html">Account</a>
+        <a href="cart.html">Cart</a>
+    </footer>
+
+</body>
+</html>
